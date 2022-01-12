@@ -1,0 +1,200 @@
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+
+/* Redimensión de fuente utilizando rem */
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+
+/* clases predefinidas */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+    margin-left: 25%;
+}
+
+.column-nav {
+    width: 25%;
+    float: left;
+    position: fixed;
+}
+
+
+/* Otras clases */
+
+header {
+    height: 100vh;
+    background-image: url(../img/nubesmar.jpg);
+    background-size: cover;
+    background-position-y: -40vh;
+    /*background-position: center;*/
+}
+
+.grayBG {
+    background-color: rgb(227, 227, 227);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 8rem;
+    color: white;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+#card-1 {
+    background-image: url(../img/ardilla.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-2 {
+    background-image: url(../img/espiral.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-3 {
+    background-image: url(../img/huecos.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-4 {
+    background-image: url(../img/nubesmar.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.padding-s {
+    padding: 1%;
+}
+
+footer {
+    background-color: #49505F;
+    color: white;
+    margin: 0;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+}
+
+.noStyle {
+    text-decoration: none;
+    color: black;
+}
+
+.lastFooter {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.back-white {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    /*reglas*/
+    .column-3,
+    .column-nav,
+    .column-75 {
+        width: 100%;
+    }
+    .column-nav {
+        position: relative;
+    }
+    .column-75 {
+        margin-left: 0%;
+    }
+    .column-4 {
+        width: 50%;
+    }
+    #caja-10 {
+        width: 100%;
+    }
+}
